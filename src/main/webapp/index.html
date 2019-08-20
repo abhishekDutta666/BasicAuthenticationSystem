@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Sign up or Log in</title>
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" >
+	<script	src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+<body>
+	<h1>Company Name</h1><br><br>
+	<div class="row">
+		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<form id="forlogin">
+	<fieldset>
+		<legend>Log In</legend>
+		Email or Phone number <input type="text" name="emailorphno" id="emailorphno"><br><br>
+		Password <input type="password" name="psw" id="psw"><br><br>
+	
+	</fieldset>
+</form>
+<button id="loginbutton">Log in</button><br><br>
+<div id="ajaxloginresponse"></div>
+<form action="accountdetails.jsp" method="post" id="loginform">
+<input type="text" name="emailorphno" id="again_emailorphno">
+<input type="text" name="psw" id="again_psw">
+</form>
+</div>
+<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+<form id="forsignup">
+	<fieldset>
+		<legend>Sign Up</legend>
+	Email or Phone number <input type="text" name="emailorphno"><br><br>
+	Name <input type="text" name="username"><br><br>
+	Password <input type="password" name="psw"><br><br>
+	Rewrite The Password <input type="password" name="repsw"><br><br>
+	<!-- <button id="signupbutton">Sign up</button><br><br> -->
+	
+	</fieldset>
+</form>
+<button id="signupbutton">Sign Up</button><br><br>
+<div id="ajaxsignupresponse"></div>	
+</div>
+</div>
+<script type="text/javascript" src="indexscript.js"></script>
+</body>
+</html>
